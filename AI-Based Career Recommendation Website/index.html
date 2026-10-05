@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>CareerAI</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#assessment">Assessment</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Your <span>Perfect Career</span></h1>
+            <p>
+                Answer a few questions and get an AI-based career
+                recommendation based on your interests, skills and goals.
+            </p>
+
+            <a href="#assessment" class="btn">Start Career Assessment</a>
+        </div>
+    </section>
+
+    <section class="assessment" id="assessment">
+
+        <h2>Career Assessment</h2>
+        <p class="subtitle">
+            Select the options that best describe you.
+        </p>
+
+        <div class="form-box">
+
+            <label>1. Which area interests you most?</label>
+            <select id="interest">
+                <option value="">Select an option</option>
+                <option value="programming">Programming</option>
+                <option value="data">Data & Analytics</option>
+                <option value="design">Design & Creativity</option>
+                <option value="security">Cyber Security</option>
+                <option value="business">Business & Management</option>
+            </select>
+
+            <label>2. What is your strongest skill?</label>
+            <select id="skill">
+                <option value="">Select an option</option>
+                <option value="coding">Coding</option>
+                <option value="analysis">Problem Solving</option>
+                <option value="creative">Creativity</option>
+                <option value="security">Security Knowledge</option>
+                <option value="communication">Communication</option>
+            </select>
+
+            <label>3. Which type of work do you prefer?</label>
+            <select id="work">
+                <option value="">Select an option</option>
+                <option value="software">Building Software</option>
+                <option value="analytics">Analyzing Data</option>
+                <option value="visual">Creating Visual Designs</option>
+                <option value="protection">Protecting Systems</option>
+                <option value="leadership">Leading Teams</option>
+            </select>
+
+            <label>4. Which subject do you enjoy?</label>
+            <select id="subject">
+                <option value="">Select an option</option>
+                <option value="computer">Computer Science</option>
+                <option value="math">Mathematics</option>
+                <option value="art">Arts & Design</option>
+                <option value="network">Networks</option>
+                <option value="management">Management</option>
+            </select>
+
+            <button onclick="recommendCareer()">
+                Get My Career Recommendation
+            </button>
+
+        </div>
+
+        <div id="result" class="result"></div>
+
+    </section>
+
+    <section class="about" id="about">
+        <h2>About CareerAI</h2>
+
+        <p>
+            CareerAI is an AI-based career recommendation website designed
+            to help students identify suitable career paths based on their
+            interests, skills, preferred work style and academic subjects.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>🎯 Personalized</h3>
+                <p>
+                    Recommendations are generated according to your
+                    selected preferences.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🤖 AI-Based</h3>
+                <p>
+                    The system uses a recommendation algorithm to identify
+                    suitable career options.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>📚 Student Friendly</h3>
+                <p>
+                    Simple interface designed especially for students and
+                    beginners.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 CareerAI | AI-Based Career Recommendation System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
